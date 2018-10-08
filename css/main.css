@@ -1,0 +1,209 @@
+* {
+	padding: 0px;
+	margin: 0px;
+
+}
+li, ol {
+	list-style: none;
+}
+
+body {
+	background: grey;
+}
+
+header {
+	background: #0ed145;
+}
+
+header ul {
+	display: inline-block;
+
+}
+header ul li {
+	display: inline-block;
+
+}
+header ul li img {
+	margin: 7px;
+	padding: 7px;
+	padding-bottom: 3px;
+	border-radius: 10px;
+	width: 30px;
+	border: 3px solid #000;
+}
+
+p {
+	font-family: Calibri;
+	padding: 10px;
+}
+
+
+p.green {
+	background: #20ff5f;
+}
+
+p.red {
+	background: #ff2420;
+}
+
+
+
+
+
+
+
+
+h1, h2, h3 {
+	padding: 1%;
+	font-family: Helvetica;
+	background: lightgrey;
+	display: inline-block;
+	width: 98%;
+}
+.main {
+	width: 100%;
+	display: inline-block;
+}
+
+article {
+	margin: 1%;
+	width: 48%;
+	max-height: 200px;
+	overflow: hidden;
+	float: left;
+}
+
+div.aviso {
+	display: inline-block;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: green;
+	width: 100%;
+	height: 100%;
+}
+
+div.aviso p {
+	padding: 10px;
+}
+
+
+
+div.aviso button {
+	padding: 10px 15px;
+	float: right;
+	margin: 10px;
+}
+
+span.nuevo {
+	padding: 3% ;
+	background: orange;
+	border-radius: 50px;
+	position: fixed;
+	bottom: 3%;
+	right: 10px;
+	color: #fff;
+	text-shadow: 0px 0px 20px #000;
+	font-size: 300%;
+}
+span.nuevo:active {
+	animation-name: tap; 
+	animation-duration: .2s;
+
+}
+
+span.spin {
+	animation-name: spin; 
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes tap {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(.8);
+	}
+}
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		transition: 2s;
+	}
+	to {
+		transform: rotate(-360deg);
+		transition: 2s;
+	}
+}
+
+.form {
+	display: inline-block;
+	position: fixed;
+	bottom: -100%;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	background: green;
+}
+
+.form input, .form textarea{
+	padding: 2%;
+	border: 2px solid grey;
+	border-radius: 5px;
+	margin: 2%;
+}
+
+.form input[type="text"] {
+	width: 90%;
+	font-size: 120%;
+
+}
+
+.form textarea {
+	width: 90%;
+	min-height: 300px;
+}
+
+.form input[type="submit"] {
+	padding: 10px 15px;
+	margin:2% 5%;
+	float: right;
+	display: inline-block;
+}
+article h3 {
+	padding: 10px 15px;
+}
+
+button.cerrar {
+	padding: 10px 15px;
+	color: #fff;
+	display: inline-block;
+	background: red;
+	border: 1px solid darkred;
+	float: right;
+	margin: 1%;
+	border-radius: 5px;
+}
+
+
+.guardar {
+	padding: 10px 15px;
+	color: #fff;
+	display: inline-block;
+	background: blue;
+	border: 1px solid darkblue;
+	float: right;
+	margin: 1%;
+	border-radius: 5px;
+}
+
+.x {
+	padding:3px 9px;
+	margin: 5px;
+	float: right;
+	background: none;
+	border: none;
+	font-size: 100%;
+	display: inline-block;
+}
